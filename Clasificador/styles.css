@@ -1,0 +1,105 @@
+/* Configuración general y responsive */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Controles responsivos usando Flexbox */
+.controles, .subida-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Contenedor de la cámara */
+#webcam-container, #imagen-subida-container {
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    margin: 0 auto 20px auto;
+    border: 3px dashed #bdc3c7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+/* Estilos para el mensaje personalizado */
+.mensaje {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e8f8f5;
+    color: #16a085;
+    border-radius: 8px;
+    border-left: 5px solid #1abc9c;
+}
+
+/* Estilos del historial */
+.historial {
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+#lista-historial {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-historial li {
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid #3498db;
+}
